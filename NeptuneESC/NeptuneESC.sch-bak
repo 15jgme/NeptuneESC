@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6300 950  1000 500 
+U 5EC82153
+F0 "computeSection" 118
+F1 "computeSection.sch" 118
+$EndSheet
+$Comp
+L power:+BATT #PWR01
+U 1 1 5ECB26E0
+P 1150 1000
+F 0 "#PWR01" H 1150 850 50  0001 C CNN
+F 1 "+BATT" H 1165 1173 50  0000 C CNN
+F 2 "" H 1150 1000 50  0001 C CNN
+F 3 "" H 1150 1000 50  0001 C CNN
+	1    1150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 5ECB31B2
+P 1150 1100
+F 0 "C1" H 1241 1146 50  0000 L CNN
+F 1 "100uF" H 1241 1055 50  0000 L CNN
+F 2 "" H 1150 1100 50  0001 C CNN
+F 3 "~" H 1150 1100 50  0001 C CNN
+F 4 "C139578" H 1150 1100 50  0001 C CNN "JLCPCB"
+	1    1150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C2
+U 1 1 5ECB3CA0
+P 1550 1100
+F 0 "C2" H 1641 1146 50  0000 L CNN
+F 1 "100uF" H 1641 1055 50  0000 L CNN
+F 2 "" H 1550 1100 50  0001 C CNN
+F 3 "~" H 1550 1100 50  0001 C CNN
+F 4 "C139578" H 1550 1100 50  0001 C CNN "JLCPCB"
+	1    1550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C3
+U 1 1 5ECB41C3
+P 1950 1100
+F 0 "C3" H 2041 1146 50  0000 L CNN
+F 1 "100uF" H 2041 1055 50  0000 L CNN
+F 2 "" H 1950 1100 50  0001 C CNN
+F 3 "~" H 1950 1100 50  0001 C CNN
+F 4 "C139578" H 1950 1100 50  0001 C CNN "JLCPCB"
+	1    1950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C4
+U 1 1 5ECB4788
+P 2350 1100
+F 0 "C4" H 2441 1146 50  0000 L CNN
+F 1 "100uF" H 2441 1055 50  0000 L CNN
+F 2 "" H 2350 1100 50  0001 C CNN
+F 3 "~" H 2350 1100 50  0001 C CNN
+F 4 "C139578" H 2350 1100 50  0001 C CNN "JLCPCB"
+	1    2350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1000 1550 1000
+Wire Wire Line
+	1550 1000 1950 1000
+Connection ~ 1550 1000
+Wire Wire Line
+	1950 1000 2350 1000
+Connection ~ 1950 1000
+Wire Wire Line
+	2350 1200 1950 1200
+Wire Wire Line
+	1950 1200 1550 1200
+Connection ~ 1950 1200
+Wire Wire Line
+	1550 1200 1150 1200
+Connection ~ 1550 1200
+Connection ~ 1150 1000
+Text Notes 650  700  0    118  ~ 0
+BATTERY DECOUPLING
+Wire Notes Line
+	700  750  700  1350
+Wire Notes Line
+	700  1350 2700 1350
+Wire Notes Line
+	2700 1350 2700 750 
+Wire Notes Line
+	2700 750  700  750 
+$Sheet
+S 9000 950  1550 650 
+U 5ECB7135
+F0 "PhaseDetection" 118
+F1 "PhaseDetection.sch" 118
+$EndSheet
+$Sheet
+S 9200 2500 1550 700 
+U 5ECBEF2E
+F0 "MosfetArray" 118
+F1 "MosfetArray.sch" 118
+$EndSheet
+$EndSCHEMATC
