@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name AO4407A)(type Legacy)(uri "C:/Users/space/Documents/Electronics Projects/NeptuneESC/Used libraries/AO4407A.lib")(options "")(descr ""))
+  (lib (name SS8050-G)(type Legacy)(uri "C:/Users/space/Documents/Electronics Projects/NeptuneESC/Used libraries/SS8050-G.lib")(options "")(descr ""))
+)

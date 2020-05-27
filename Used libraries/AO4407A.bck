@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AO4407A
+D 30V P-Channel MOSFET
+K
+F http://aosmd.com/res/data_sheets/AO4407A.pdf
+$ENDCMP
+#
+#End Doc Library
