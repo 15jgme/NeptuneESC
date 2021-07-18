@@ -3,7 +3,7 @@
 # NeptuneESC
 The goal of this project is to create the smallest possible electronic speed controller module for a single motor. This work is essentially Blue Robotic's BlueESC with a different, smaller, board layout. 
 
-![Board layout](https://github.com/15jgme/NeptuneESC/images/NeptuneESC.png)
+![Board layout](https://github.com/15jgme/NeptuneESC/tree/master/images/NeptuneESC.png)
 
 ## Quick notes
 *Design in KiCad
